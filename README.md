@@ -11,3 +11,5 @@ Write data from CSV to RAW_TABLE >
 Write data from RAW_STREAM to STAGE_TABLE >
 Write data from STAGE_STREAM to MASTER_TABLE
 
+![image](https://github.com/wladabutenko/Snowflake_Airflow/assets/98577896/217b5721-0ec9-40cb-9287-4942f3d787bd)
+
