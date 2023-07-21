@@ -1,0 +1,17 @@
+version: '3'
+services:
+  webserver:
+    image: apache/airflow:latest
+    restart: always
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__WEBSERVER__RBAC=False
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+
+volumes:
+  logs:
