@@ -2,8 +2,9 @@
 
 Task
 To build a Snowflake based ELT pipeline using Airflow. The overall design of the architecture should look like the illustration below.
-To register in Snowflake we need to use wifi of Warsaw or Vilnius
-Technical description 
+
+Technical description
+
 Parsing the file, getting rid of indexes (otherwise Snowflake will not read it).
 Create two data streams in Snowflake and configure them for two tables (RAW_TABLE, STAGE_TABLE).
 Write data from CSV to RAW_TABLE
