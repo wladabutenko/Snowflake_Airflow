@@ -1,4 +1,4 @@
-from connection import conn
+from Snowflake_Airflow.plugins.connection import conn
 
 cursor = conn.cursor()
 
